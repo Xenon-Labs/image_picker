@@ -270,7 +270,7 @@ public class ImagePickerDelegate
     Intent pickVideoIntent = new Intent(Intent.ACTION_GET_CONTENT);
     if (this.methodCall != null && this.methodCall.argument("maxDuration") != null) {
       int maxSeconds = this.methodCall.argument("maxDuration");
-      intent.putExtra(MediaStore.EXTRA_DURATION_LIMIT, maxSeconds);
+      pickVideoIntent.putExtra(MediaStore.EXTRA_DURATION_LIMIT, maxSeconds);
     }
     pickVideoIntent.setType("video/*");
 
