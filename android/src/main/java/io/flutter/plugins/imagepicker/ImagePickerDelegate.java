@@ -270,7 +270,7 @@ public class ImagePickerDelegate
     Intent pickVideoIntent = new Intent(Intent.ACTION_GET_CONTENT);
     if (this.methodCall != null && this.methodCall.argument("maxDuration") != null) {
       int maxSeconds = this.methodCall.argument("maxDuration");
-      pickVideoIntent.putExtra(MediaStore.EXTRA_DURATION_LIMIT, maxSeconds);
+      pickVideoIntent.putExtra(MediaStore.EXTRA_DURATION_LIMIT, 60);
     }
     pickVideoIntent.setType("video/*");
 
@@ -297,7 +297,7 @@ public class ImagePickerDelegate
     Intent intent = new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
     if (this.methodCall != null && this.methodCall.argument("maxDuration") != null) {
       int maxSeconds = this.methodCall.argument("maxDuration");
-      intent.putExtra(MediaStore.EXTRA_DURATION_LIMIT, maxSeconds);
+      intent.putExtra(MediaStore.EXTRA_DURATION_LIMIT, 60);
     }
     if (cameraDevice == CameraDevice.FRONT) {
       useFrontCamera(intent);
