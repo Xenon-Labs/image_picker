@@ -268,7 +268,10 @@ public class ImagePickerDelegate
 
   private void launchPickVideoFromGalleryIntent() {
     Intent pickVideoIntent = new Intent(Intent.ACTION_GET_CONTENT);
-    pickVideoIntent.putExtra(android.intent.extra.durationLimit, 60);
+    if (this.methodCall != null && this.methodCall.argument("maxDuration") != null) {
+      int maxSeconds = this.methodCall.argument("maxDuration");
+      pickVideoIntent.putExtra(MediaStore.EXTRA_DURATION_LIMIT, maxSeconds);
+    }
     pickVideoIntent.setType("video/*");
 
     activity.startActivityForResult(pickVideoIntent, REQUEST_CODE_CHOOSE_VIDEO_FROM_GALLERY);
@@ -294,7 +297,7 @@ public class ImagePickerDelegate
     Intent intent = new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
     if (this.methodCall != null && this.methodCall.argument("maxDuration") != null) {
       int maxSeconds = this.methodCall.argument("maxDuration");
-      intent.putExtra(MediaStore.EXTRA_DURATION_LIMIT, 60);
+      intent.putExtra(MediaStore.EXTRA_DURATION_LIMIT, maxSeconds);
     }
     if (cameraDevice == CameraDevice.FRONT) {
       useFrontCamera(intent);
