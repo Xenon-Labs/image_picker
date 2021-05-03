@@ -16,15 +16,11 @@ flutter:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_plugin_android_lifecycle: ^1.0.2
+  flutter_plugin_android_lifecycle: ^2.0.0
   image_picker_platform_interface: ^1.1.0
 
 dev_dependencies:
   video_player: ^0.10.3
-  flutter_test:
-    sdk: flutter
-  integration_test:
-    path: ../../integration_test
   pedantic: ^1.8.0
 
 environment:
