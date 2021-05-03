@@ -2,6 +2,12 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "async",
+      "rootUri": "file:///Users/shiv/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.6.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "characters",
       "rootUri": "file:///Users/shiv/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.1.0",
       "packageUri": "lib/",
@@ -39,21 +45,21 @@
     },
     {
       "name": "http",
-      "rootUri": "file:///Users/shiv/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.12.2",
+      "rootUri": "file:///Users/shiv/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.2",
       "packageUri": "lib/",
-      "languageVersion": "2.4"
+      "languageVersion": "2.12"
     },
     {
       "name": "http_parser",
-      "rootUri": "file:///Users/shiv/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-3.1.4",
+      "rootUri": "file:///Users/shiv/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.3"
+      "languageVersion": "2.12"
     },
     {
       "name": "image_picker_platform_interface",
-      "rootUri": "file:///Users/shiv/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker_platform_interface-1.1.6",
+      "rootUri": "file:///Users/shiv/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker_platform_interface-2.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.5"
+      "languageVersion": "2.12"
     },
     {
       "name": "js",
@@ -81,9 +87,9 @@
     },
     {
       "name": "plugin_platform_interface",
-      "rootUri": "file:///Users/shiv/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-1.0.3",
+      "rootUri": "file:///Users/shiv/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-2.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.12"
     },
     {
       "name": "sky_engine",
@@ -146,7 +152,7 @@
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2021-05-03T02:04:54.406701Z",
+  "generated": "2021-05-03T02:08:20.864592Z",
   "generator": "pub",
   "generatorVersion": "2.12.3"
 }
